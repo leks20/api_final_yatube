@@ -1,0 +1,12 @@
+- model: auth.user
+pk: 1
+  fields:
+    username: leo
+    first_name: Лев
+    last_name: Толстой
+- model: auth.user
+  pk: 2
+  fields:
+    username: anton
+    first_name: Антон
+    last_name: Чехов
