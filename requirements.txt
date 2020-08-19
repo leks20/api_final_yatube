@@ -2,5 +2,6 @@ requests
 django
 pytest
 pytest-django
+python-dotenv
 djangorestframework
 djangorestframework-simplejwt
