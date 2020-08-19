@@ -67,14 +67,15 @@ API вернет JWT-токен в формате:
 При отправке запроcов передавайте токен в заголовке Authorization: Bearer <токен>
 
 ## Как работает API_Yatube
-Пример POST-запроса:
+
+##### Пример http-запроса (POST):
 ```
 api = 'http://127.0.0.1/api/v1/posts/'
 data = {'text': 'Your post'}
 headers = {'Authorization': 'Bearer your_token'}
 request = requests.post(api, data=data, headers=headers)
 ```
-Ответ API_Yatube:
+##### Ответ API_Yatube:
 
 Статус- код 200
 
