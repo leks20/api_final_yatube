@@ -37,9 +37,7 @@ python manage.py migrate
 ```
 python manage.py createsuperuser
 ```
-6) С помощью команды *pytest* вы можете запустить тесты и проверить работу модулей
-
-7) Запустите сервер:
+6) Запустите сервер:
 ```
 python manage.py runserver
 ```
@@ -47,5 +45,15 @@ ____________________________________
 
 Ваш проект запустился на http://127.0.0.1:8000/
 
-Полная документация ([redoc.yaml](https://github.com/leks20/api_yatube/blob/master/static/redoc.yaml)) доступна по адресу http://localhost:8000/redoc/ 
+Полная документация ([redoc.yaml](https://github.com/leks20/api_yatube/blob/master/static/redoc.yaml)) доступна по адресу http://localhost:8000/redoc/
 
+С помощью команды *pytest* вы можете запустить тесты и проверить работу модулей
+
+## Аутентификация
+
+Выполните POST-запрос *localhost:8000/api/v1/token/* передав поля username и password. API вернет JWT-токен в формате:
+    {
+        "refresh": "ХХХХХХХХХХХ",
+        "access": "ХХХХХХХХХХХХ"
+    }
+Токен вернётся в поле access, а данные из поля refresh нужны для обновления токена
