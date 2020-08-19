@@ -1,7 +1,9 @@
-requests
 django
+django-filter
+djangorestframework
+djangorestframework-simplejwt
 pytest
 pytest-django
 python-dotenv
-djangorestframework
-djangorestframework-simplejwt
+requests
+
