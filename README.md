@@ -9,6 +9,8 @@ REST API для социальной сети блогеров [Yatube](https://
 
 Поддерживает методы GET, POST, PUT, PATCH, DELETE
 
+Предоставляет данные в формате JSON
+
 ## Стек технологий
 - проект написан на Python с использованием Django REST Framework
 - библиотека Simple JWT - работа с JWT-токеном
@@ -68,12 +70,12 @@ API вернет JWT-токен в формате:
 
 ## Как работает API_Yatube
 
-##### Пример http-запроса (POST):
+##### Пример http-запроса (POST) для создания поста:
 ```
-api = 'http://127.0.0.1/api/v1/posts/'
+url = 'http://127.0.0.1/api/v1/posts/'
 data = {'text': 'Your post'}
 headers = {'Authorization': 'Bearer your_token'}
-request = requests.post(api, data=data, headers=headers)
+request = requests.post(url, data=data, headers=headers)
 ```
 ##### Ответ API_Yatube:
 ```
@@ -85,4 +87,22 @@ request = requests.post(api, data=data, headers=headers)
   "author": "string",
   "pub_date": "2020-08-20T14:15:22Z"
 }
+```
+
+##### Пример http-запроса (GET) для получения списка подписчиков:
+```
+url = 'http://127.0.0.1:8000/api/v1/follow/'
+headers = {'Authorization': 'Bearer your_token'}
+request = requests.get(api, headers=headers)
+```
+##### Ответ API_Yatube:
+```
+Статус- код 200
+
+[
+  {
+    "user": "string",
+    "following": "string"
+  }
+]
 ```
