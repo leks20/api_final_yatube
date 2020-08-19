@@ -88,7 +88,7 @@ request = requests.post(url, data=data, headers=headers)
   "pub_date": "2020-08-20T14:15:22Z"
 }
 ```
-
+_____________________________________________
 ##### Пример http-запроса (GET) для получения списка подписчиков:
 ```
 url = 'http://127.0.0.1:8000/api/v1/follow/'
