@@ -76,7 +76,7 @@ headers = {'Authorization': 'Bearer your_token'}
 request = requests.post(api, data=data, headers=headers)
 ```
 ##### Ответ API_Yatube:
-
+```
 Статус- код 200
 
 {
@@ -85,3 +85,4 @@ request = requests.post(api, data=data, headers=headers)
   "author": "string",
   "pub_date": "2020-08-20T14:15:22Z"
 }
+```
