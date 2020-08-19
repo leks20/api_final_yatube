@@ -37,7 +37,9 @@ python manage.py migrate
 ```
 python manage.py createsuperuser
 ```
-6) Запустите сервер:
+6) С помощью команды *pytest* вы можете запустить тесты и проверить работу модулей
+
+7) Запустите сервер:
 ```
 python manage.py runserver
 ```
@@ -47,4 +49,3 @@ ____________________________________
 
 Полная документация ([redoc.yaml](https://github.com/leks20/api_yatube/blob/master/static/redoc.yaml)) доступна по адресу http://localhost:8000/redoc/ 
 
-С помощью команды *pytest* вы можете запустить тесты и проверить работу модулей
