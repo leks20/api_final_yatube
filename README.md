@@ -65,3 +65,14 @@ API вернет JWT-токен в формате:
 Токен вернётся в поле access, а данные из поля refresh нужны для обновления токена
 
 При отправке запроса передавайте токен в заголовке Authorization: Bearer <токен>
+
+## Пример работы API_Yatube
+Выполните POST-запрос:
+
+api = 'http://127.0.0.1/api/v1/posts/'
+
+data = {'text': 'Your post'}
+
+headers = {'Authorization': 'Bearer your_token'}
+
+r = requests.post(api, data=data, headers=headers)
